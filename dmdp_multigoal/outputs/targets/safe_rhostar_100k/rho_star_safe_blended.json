@@ -1,0 +1,41 @@
+{
+  "mu": [
+    0.8961589312423588,
+    1.0633398838001993,
+    1.631227107423293,
+    0.5768832315487096
+  ],
+  "sigma": [
+    0.36678135579152166,
+    0.3303904633422442,
+    0.48201979178542687,
+    0.20493094483393967
+  ],
+  "metadata": {
+    "source": "filtered_rollout_samples",
+    "feature_names": [
+      "d_goal",
+      "d_hazard",
+      "d_agent",
+      "speed"
+    ],
+    "episodes_per_method": 5,
+    "candidate_episodes": 25,
+    "selected_episodes": 5,
+    "selected_samples": 5503,
+    "episode_thresholds": {
+      "return_cut": 0.581163610815093,
+      "cost_cut": 187.0,
+      "tail_cut": 0.301
+    },
+    "sample_rules": {
+      "d_goal_max": 2.1662908850012466,
+      "d_hazard_min": 0.45,
+      "d_agent_min": 0.45,
+      "speed_max": 1.0,
+      "selected_fraction": 0.5503
+    },
+    "target_kind": "safe_blended",
+    "blend_handcrafted_weight": 0.4
+  }
+}

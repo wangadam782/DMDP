@@ -1,0 +1,80 @@
+[
+  {
+    "Method": "State-Feedback MAPPO",
+    "source": "outputs/runs/mappo_method1_multigoal_100k_ccritic/eval/mappo_eval.json",
+    "Return": 0.2895787032341569,
+    "Success": 0.7,
+    "Cost": 153.3,
+    "CVaR0.1": -1.2275332067128533,
+    "StateW2": 1.812861185831924,
+    "FinalStateW2": 1.945431372210471,
+    "TailRisk": 0.24555,
+    "UnsafeOccupancy": 0.24215,
+    "DispersionError": 0.5699941700874532
+  },
+  {
+    "Method": "Distributional MAPPO",
+    "source": "outputs/runs/dist_mappo_method2_100k_ccritic/eval/dist_mappo_eval.json",
+    "Return": 0.4566754993698048,
+    "Success": 0.8,
+    "Cost": 165.7,
+    "CVaR0.1": -0.862104309531122,
+    "StateW2": 1.8601660072848,
+    "FinalStateW2": 1.8668458560475425,
+    "TailRisk": 0.2403,
+    "UnsafeOccupancy": 0.2397,
+    "DispersionError": 0.5626983488948178
+  },
+  {
+    "Method": "DMDP-MAPPO",
+    "source": "outputs/runs/dmdp_method3_100k_ccritic/eval/dmdp_eval.json",
+    "Return": 0.533578032250158,
+    "Success": 0.7,
+    "Cost": 153.9,
+    "CVaR0.1": -1.187543561534861,
+    "StateW2": 1.7687251627514513,
+    "FinalStateW2": 1.9593218957750047,
+    "TailRisk": 0.21315,
+    "UnsafeOccupancy": 0.20975,
+    "DispersionError": 0.5573052044135766
+  },
+  {
+    "Method": "Paper-like DMDP Online latest",
+    "source": "outputs/runs/dmdp_paper_online_multienv_100k_fixed/eval/dmdp_paper_online_eval.json",
+    "Return": 1.2877327361163355,
+    "Success": 0.8,
+    "Cost": 245.1,
+    "CVaR0.1": -0.33865188502079113,
+    "StateW2": 1.7518741281454575,
+    "FinalStateW2": 1.3926878270814516,
+    "TailRisk": 0.42435,
+    "UnsafeOccupancy": 0.40925,
+    "DispersionError": 0.5677174083359617
+  },
+  {
+    "Method": "Method4 tail-warmup",
+    "source": "outputs/runs/dmdp_paper_online_tail_warmup_100k/eval/dmdp_paper_online_eval.json",
+    "Return": 2.824409506574596,
+    "Success": 0.8,
+    "Cost": 137.9,
+    "CVaR0.1": -1.4851533996141781,
+    "StateW2": 1.981091722429507,
+    "FinalStateW2": 1.8434591995703802,
+    "TailRisk": 0.22985,
+    "UnsafeOccupancy": 0.22445,
+    "DispersionError": 0.5999306190294532
+  },
+  {
+    "Method": "Method4 tail-safe c0.20 t0.05",
+    "source": "outputs/runs/dmdp_paper_online_tail_safe_100k/eval/dmdp_paper_online_eval.json",
+    "Return": -0.3173373538015879,
+    "Success": 0.4,
+    "Cost": 99.0,
+    "CVaR0.1": -1.3687504239727586,
+    "StateW2": 1.992536561186323,
+    "FinalStateW2": 1.9650454382524132,
+    "TailRisk": 0.1946,
+    "UnsafeOccupancy": 0.1916,
+    "DispersionError": 0.5806219765400037
+  }
+]

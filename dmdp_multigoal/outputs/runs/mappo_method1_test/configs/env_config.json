@@ -1,0 +1,44 @@
+{
+  "env": {
+    "id": "SafetyPointMultiGoal1-v0",
+    "alternatives": [
+      "SafetyPointMultiGoal1-v0",
+      "SafetyPointGoal1-v0",
+      "SafetyPointMultiGoal1-v1",
+      "SafetyPointMultiGoal-v0",
+      "SafetyPointGoal-v0"
+    ],
+    "family": "multigoal1",
+    "actual_family_note": "Safety-Gymnasium 1.0.0 registers SafetyPointGoal1-v0, not SafetyPointMultiGoal1-v0.",
+    "num_envs": 4,
+    "max_episode_steps": 500,
+    "seed": 7
+  },
+  "features": {
+    "names": [
+      "d_goal",
+      "d_hazard",
+      "d_agent",
+      "speed"
+    ],
+    "expected_agents": 2,
+    "hazard_threshold": 0.35,
+    "agent_threshold": 0.35,
+    "default_missing_distance": 10.0
+  },
+  "target_distribution": {
+    "type": "handcrafted",
+    "mu": [
+      0.3,
+      1.5,
+      1.0,
+      0.4
+    ],
+    "sigma": [
+      0.2,
+      0.5,
+      0.35,
+      0.2
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "run_dir": "outputs/runs/mappo_method1_complete",
+  "training": {
+    "total_steps": 8192,
+    "num_completed_episodes": 8,
+    "recent_episode_return": 0.3095421806877492,
+    "recent_episode_train_return": -4.890457819312247,
+    "recent_episode_cost": 52.0,
+    "recent_episode_length": 1000.0
+  },
+  "adapter": {
+    "requested_env_id": "SafetyPointMultiGoal1-v0",
+    "actual_env_id": "SafetyPointGoal1-v0",
+    "observation_kind": "Box",
+    "action_kind": "Box",
+    "num_agents": 1,
+    "notes": [
+      "Adapter detected a single-agent API. MultiGoal may mean multiple goals in this Safety-Gymnasium version."
+    ]
+  },
+  "comparison": {
+    "random": {
+      "mean_return": 0.16016739005471198,
+      "success_rate": 0.6,
+      "average_cost": 0.0,
+      "return_cvar_0.1": -0.18476807208823431,
+      "state_w2": 12.531845065487678,
+      "tail_risk": 1.0,
+      "unsafe_occupancy": 1.0,
+      "dispersion_error": 0.6726793441187267
+    },
+    "mappo": {
+      "mean_return": 0.43424812864115336,
+      "success_rate": 0.8,
+      "average_cost": 51.8,
+      "return_cvar_0.1": -0.6631599035214388,
+      "state_w2": 9.365758648787759,
+      "tail_risk": 1.0,
+      "unsafe_occupancy": 1.0,
+      "dispersion_error": 0.6726793441187267
+    }
+  },
+  "note": "Small MAPPO training test. Method 1 optimizes task reward with cost penalty but does not use DMDP state-distribution feedback."
+}

@@ -1,0 +1,4 @@
+method,total_steps,num_completed_episodes,recent_episode_return,recent_episode_train_return,recent_episode_cost,recent_episode_length,recent_episode_state_w2,recent_episode_tail_risk
+State-Feedback MAPPO,100096,100,0.6910144497568089,-11.18898572444714,118.8,1000.0,,
+Distributional MAPPO,100096,100,0.9620155077371741,-15.042984755315047,160.05,1000.0,,
+DMDP-MAPPO,100096,100,1.3772551705528282,-1123.5513648301362,234.75,1000.0,3.014536081505051,2.0

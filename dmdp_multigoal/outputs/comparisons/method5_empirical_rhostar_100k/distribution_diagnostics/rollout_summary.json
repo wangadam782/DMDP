@@ -1,0 +1,47 @@
+[
+  {
+    "label": "Method 1",
+    "method": "mappo",
+    "mean_return": 0.4200128504545286,
+    "success_rate": 1.0,
+    "average_cost": 156.0,
+    "mean_distance": 0.45600851253283,
+    "final_distance": 0.4271059045395204
+  },
+  {
+    "label": "Method 2",
+    "method": "dist_mappo",
+    "mean_return": 0.5031940314686385,
+    "success_rate": 1.0,
+    "average_cost": 190.0,
+    "mean_distance": 0.4591061801711281,
+    "final_distance": 0.5024789718168211
+  },
+  {
+    "label": "Method 3",
+    "method": "dmdp_mappo",
+    "mean_return": 0.4123327991646153,
+    "success_rate": 1.0,
+    "average_cost": 174.0,
+    "mean_distance": 0.46994210324038627,
+    "final_distance": 0.4280782022428059
+  },
+  {
+    "label": "Method 4",
+    "method": "dmdp_paper_online",
+    "mean_return": 2.7398324337667184,
+    "success_rate": 1.0,
+    "average_cost": 170.0,
+    "mean_distance": 0.4449648566505603,
+    "final_distance": 0.6021740473755421
+  },
+  {
+    "label": "Method 5",
+    "method": "dmdp_paper_online",
+    "mean_return": -5.833466411915195,
+    "success_rate": 0.0,
+    "average_cost": 96.5,
+    "mean_distance": 2.3638855868952233,
+    "final_distance": 6.710834523922247
+  }
+]

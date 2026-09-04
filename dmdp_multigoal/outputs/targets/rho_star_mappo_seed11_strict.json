@@ -1,0 +1,27 @@
+{
+  "mu": [
+    1.6622078577768173,
+    0.7858248213137073,
+    1.9850857342489248,
+    0.4931078018767083
+  ],
+  "sigma": [
+    0.9206203406427825,
+    0.5550036961074674,
+    1.1012063216327517,
+    0.29952303699512806
+  ],
+  "metadata": {
+    "source": "checkpoint_rollouts",
+    "checkpoint": "/Users/wang/DMDP/dmdp_multigoal/outputs/runs/mappo_method1_multigoal_100k_ccritic_seed11/checkpoints/mappo_latest.pt",
+    "method": "mappo",
+    "accepted_feature_batches": 12000,
+    "accepted_episodes": 12,
+    "candidate_episodes": 12,
+    "episodes": 100,
+    "min_return": 1.0,
+    "max_cost": 130.0,
+    "require_success": true,
+    "top_k": 20
+  }
+}

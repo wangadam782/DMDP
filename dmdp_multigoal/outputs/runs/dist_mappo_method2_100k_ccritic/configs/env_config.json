@@ -1,0 +1,41 @@
+{
+  "env": {
+    "id": "SafetyPointMultiGoal1-v0",
+    "alternatives": [
+      "SafetyPointMultiGoal1-v0"
+    ],
+    "family": "multigoal1",
+    "require_multi_agent": true,
+    "allow_single_agent_fallback": false,
+    "num_envs": 4,
+    "max_episode_steps": 1000,
+    "seed": 7
+  },
+  "features": {
+    "names": [
+      "d_goal",
+      "d_hazard",
+      "d_agent",
+      "speed"
+    ],
+    "expected_agents": 2,
+    "hazard_threshold": 0.35,
+    "agent_threshold": 0.35,
+    "default_missing_distance": 10.0
+  },
+  "target_distribution": {
+    "type": "handcrafted",
+    "mu": [
+      0.3,
+      1.5,
+      1.0,
+      0.4
+    ],
+    "sigma": [
+      0.2,
+      0.5,
+      0.35,
+      0.2
+    ]
+  }
+}

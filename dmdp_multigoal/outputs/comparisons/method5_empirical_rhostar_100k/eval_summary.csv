@@ -1,0 +1,6 @@
+method,path,missing,mean_return,success_rate,average_cost,state_w2,final_state_w2,tail_risk,unsafe_occupancy,dispersion_error
+Method 1 State-MAPPO,outputs/runs/mappo_method1_multigoal_100k_ccritic/eval/mappo_eval.json,False,0.2895787032341569,0.7,153.3,1.812861185831924,1.945431372210471,0.24555,0.24215,0.5699941700874532
+Method 2 Dist-MAPPO,outputs/runs/dist_mappo_method2_100k_ccritic/eval/dist_mappo_eval.json,False,0.4566754993698048,0.8,165.7,1.8601660072848,1.8668458560475425,0.2403,0.2397,0.5626983488948178
+Method 3 DMDP-MAPPO,outputs/runs/dmdp_method3_100k_ccritic/eval/dmdp_eval.json,False,0.533578032250158,0.7,153.9,1.7687251627514513,1.9593218957750047,0.21315,0.20975,0.5573052044135766
+Method 4 Tail Warmup,outputs/runs/dmdp_paper_online_tail_warmup_100k/eval/dmdp_paper_online_eval.json,False,2.824409506574596,0.8,137.9,1.981091722429507,1.8434591995703802,0.22985,0.22445,0.5999306190294532
+Method 5 Online Empirical rho*,outputs/runs/method5_paper_online_empirical_rhostar_100k/eval/method5_eval.json,False,-6.283895385049706,0.0,39.8,3.2764144873576364,3.6215160984647254,0.06605,0.06605,2.6508720508874775

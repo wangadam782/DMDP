@@ -1,0 +1,7 @@
+Method,Return,Success,Cost,CVaR0.1,StateW2,FinalStateW2,TailRisk,UnsafeOccupancy,DispersionError,source
+State-Feedback MAPPO,0.2895787032341569,0.7,153.3,-1.2275332067128533,1.812861185831924,1.945431372210471,0.24555,0.24215,0.5699941700874532,outputs/runs/mappo_method1_multigoal_100k_ccritic/eval/mappo_eval.json
+Distributional MAPPO,0.4566754993698048,0.8,165.7,-0.862104309531122,1.8601660072848,1.8668458560475425,0.2403,0.2397,0.5626983488948178,outputs/runs/dist_mappo_method2_100k_ccritic/eval/dist_mappo_eval.json
+DMDP-MAPPO,0.533578032250158,0.7,153.9,-1.187543561534861,1.7687251627514513,1.9593218957750047,0.21315,0.20975,0.5573052044135766,outputs/runs/dmdp_method3_100k_ccritic/eval/dmdp_eval.json
+Paper-like DMDP Online latest,1.2877327361163355,0.8,245.1,-0.33865188502079113,1.7518741281454575,1.3926878270814516,0.42435,0.40925,0.5677174083359617,outputs/runs/dmdp_paper_online_multienv_100k_fixed/eval/dmdp_paper_online_eval.json
+Method4 tail-warmup,2.824409506574596,0.8,137.9,-1.4851533996141781,1.981091722429507,1.8434591995703802,0.22985,0.22445,0.5999306190294532,outputs/runs/dmdp_paper_online_tail_warmup_100k/eval/dmdp_paper_online_eval.json
+Method4 tail-safe c0.20 t0.05,-0.3173373538015879,0.4,99.0,-1.3687504239727586,1.992536561186323,1.9650454382524132,0.1946,0.1916,0.5806219765400037,outputs/runs/dmdp_paper_online_tail_safe_100k/eval/dmdp_paper_online_eval.json

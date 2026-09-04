@@ -1,0 +1,149 @@
+{
+  "method": "mappo",
+  "status": "trained",
+  "checkpoint": "dmdp_multigoal/outputs/runs/mappo_method1_multigoal_1k/checkpoints/mappo_latest.pt",
+  "adapter": {
+    "requested_env_id": "SafetyPointMultiGoal1-v0",
+    "actual_env_id": "SafetyPointMultiGoal1-v0",
+    "observation_kind": "{agent_0:Box, agent_1:Box}",
+    "action_kind": "{agent_0:Box, agent_1:Box}",
+    "num_agents": 2,
+    "notes": [
+      "Adapter detected 2 agents from observation space."
+    ]
+  },
+  "config": {
+    "method": "mappo",
+    "seed": 7,
+    "device": "cpu",
+    "total_steps": 1024,
+    "rollout_steps": 128,
+    "num_epochs": 4,
+    "minibatch_size": 512,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "clip_ratio": 0.2,
+    "entropy_coef": 0.01,
+    "value_coef": 0.5,
+    "learning_rate": 0.0003,
+    "max_grad_norm": 0.5,
+    "cost_penalty": 0.1,
+    "network": {
+      "hidden_sizes": [
+        128,
+        128
+      ],
+      "activation": "tanh"
+    },
+    "output": {
+      "checkpoint": "dmdp_multigoal/outputs/runs/mappo_method1_multigoal_1k/checkpoints/mappo_latest.pt",
+      "metrics": "dmdp_multigoal/outputs/runs/mappo_method1_multigoal_1k/metrics/mappo_train.json"
+    }
+  },
+  "episodes": [
+    {
+      "episode_return": -2.0836953998356966,
+      "episode_train_return": -31.183695880645246,
+      "episode_cost": 291.0,
+      "episode_length": 1000.0
+    }
+  ],
+  "updates": [
+    {
+      "update": 1.0,
+      "total_steps": 128.0,
+      "policy_loss": -0.014289632439613342,
+      "value_loss": 0.02811509370803833,
+      "entropy": 2.8377389907836914,
+      "recent_episode_return": 0.0,
+      "recent_episode_train_return": 0.0,
+      "recent_episode_cost": 0.0,
+      "recent_episode_length": 0.0
+    },
+    {
+      "update": 2.0,
+      "total_steps": 256.0,
+      "policy_loss": -0.00260065495967865,
+      "value_loss": 0.8148537278175354,
+      "entropy": 2.8372232913970947,
+      "recent_episode_return": 0.0,
+      "recent_episode_train_return": 0.0,
+      "recent_episode_cost": 0.0,
+      "recent_episode_length": 0.0
+    },
+    {
+      "update": 3.0,
+      "total_steps": 384.0,
+      "policy_loss": -0.014962375164031982,
+      "value_loss": 0.5685052871704102,
+      "entropy": 2.8367919921875,
+      "recent_episode_return": 0.0,
+      "recent_episode_train_return": 0.0,
+      "recent_episode_cost": 0.0,
+      "recent_episode_length": 0.0
+    },
+    {
+      "update": 4.0,
+      "total_steps": 512.0,
+      "policy_loss": -0.009043913334608078,
+      "value_loss": 0.2354162484407425,
+      "entropy": 2.8366944789886475,
+      "recent_episode_return": 0.0,
+      "recent_episode_train_return": 0.0,
+      "recent_episode_cost": 0.0,
+      "recent_episode_length": 0.0
+    },
+    {
+      "update": 5.0,
+      "total_steps": 640.0,
+      "policy_loss": -0.003903668373823166,
+      "value_loss": 0.037270572036504745,
+      "entropy": 2.8357791900634766,
+      "recent_episode_return": 0.0,
+      "recent_episode_train_return": 0.0,
+      "recent_episode_cost": 0.0,
+      "recent_episode_length": 0.0
+    },
+    {
+      "update": 6.0,
+      "total_steps": 768.0,
+      "policy_loss": -0.013520359061658382,
+      "value_loss": 0.005985540337860584,
+      "entropy": 2.8346898555755615,
+      "recent_episode_return": 0.0,
+      "recent_episode_train_return": 0.0,
+      "recent_episode_cost": 0.0,
+      "recent_episode_length": 0.0
+    },
+    {
+      "update": 7.0,
+      "total_steps": 896.0,
+      "policy_loss": -0.0029053562320768833,
+      "value_loss": 0.005604918114840984,
+      "entropy": 2.8334028720855713,
+      "recent_episode_return": 0.0,
+      "recent_episode_train_return": 0.0,
+      "recent_episode_cost": 0.0,
+      "recent_episode_length": 0.0
+    },
+    {
+      "update": 8.0,
+      "total_steps": 1024.0,
+      "policy_loss": 0.0012983093038201332,
+      "value_loss": 0.03919235244393349,
+      "entropy": 2.832172155380249,
+      "recent_episode_return": -2.0836953998356966,
+      "recent_episode_train_return": -31.183695880645246,
+      "recent_episode_cost": 291.0,
+      "recent_episode_length": 1000.0
+    }
+  ],
+  "summary": {
+    "total_steps": 1024,
+    "num_completed_episodes": 1,
+    "recent_episode_return": -2.0836953998356966,
+    "recent_episode_train_return": -31.183695880645246,
+    "recent_episode_cost": 291.0,
+    "recent_episode_length": 1000.0
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "method": "dist_mappo",
+  "status": "scaffold_ready",
+  "return_distribution": "quantile_critic",
+  "note": "Distributional MAPPO models return distribution Z, not system state distribution rho."
+}

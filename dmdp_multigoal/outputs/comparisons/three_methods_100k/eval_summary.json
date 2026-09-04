@@ -1,0 +1,38 @@
+[
+  {
+    "method": "State-Feedback MAPPO",
+    "mean_return": 0.19718579077397094,
+    "success_rate": 0.3,
+    "average_cost": 10.6,
+    "return_cvar_0.1": -0.425873680609141,
+    "state_w2": 3.623852295927837,
+    "final_state_w2": 3.1777763860082526,
+    "tail_risk": 2.0,
+    "unsafe_occupancy": 1.0,
+    "dispersion_error": 0.6726793441187267
+  },
+  {
+    "method": "Distributional MAPPO",
+    "mean_return": 0.3429599884639087,
+    "success_rate": 0.6,
+    "average_cost": 232.4,
+    "return_cvar_0.1": -0.8233831399956109,
+    "state_w2": 5.647212356389879,
+    "final_state_w2": 6.95862087036564,
+    "tail_risk": 2.0,
+    "unsafe_occupancy": 1.0,
+    "dispersion_error": 0.6726793441187267
+  },
+  {
+    "method": "DMDP-MAPPO",
+    "mean_return": 1.2814615828715221,
+    "success_rate": 0.7,
+    "average_cost": 128.6,
+    "return_cvar_0.1": -1.283756396773827,
+    "state_w2": 3.0068182369213874,
+    "final_state_w2": 3.006352179423378,
+    "tail_risk": 2.0,
+    "unsafe_occupancy": 1.0,
+    "dispersion_error": 0.6726793441187267
+  }
+]

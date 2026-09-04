@@ -1,0 +1,80 @@
+[
+  {
+    "method": "Method 1 State-MAPPO",
+    "path": "outputs/runs/mappo_method1_multigoal_100k_ccritic/eval/mappo_eval.json",
+    "missing": false,
+    "mean_return": 0.2895787032341569,
+    "success_rate": 0.7,
+    "average_cost": 153.3,
+    "state_w2": 1.812861185831924,
+    "final_state_w2": 1.945431372210471,
+    "tail_risk": 0.24555,
+    "unsafe_occupancy": 0.24215,
+    "dispersion_error": 0.5699941700874532
+  },
+  {
+    "method": "Method 2 Dist-MAPPO",
+    "path": "outputs/runs/dist_mappo_method2_100k_ccritic/eval/dist_mappo_eval.json",
+    "missing": false,
+    "mean_return": 0.4566754993698048,
+    "success_rate": 0.8,
+    "average_cost": 165.7,
+    "state_w2": 1.8601660072848,
+    "final_state_w2": 1.8668458560475425,
+    "tail_risk": 0.2403,
+    "unsafe_occupancy": 0.2397,
+    "dispersion_error": 0.5626983488948178
+  },
+  {
+    "method": "Method 3 DMDP-MAPPO",
+    "path": "outputs/runs/dmdp_method3_100k_ccritic/eval/dmdp_eval.json",
+    "missing": false,
+    "mean_return": 0.533578032250158,
+    "success_rate": 0.7,
+    "average_cost": 153.9,
+    "state_w2": 1.7687251627514513,
+    "final_state_w2": 1.9593218957750047,
+    "tail_risk": 0.21315,
+    "unsafe_occupancy": 0.20975,
+    "dispersion_error": 0.5573052044135766
+  },
+  {
+    "method": "Method 4 Online",
+    "path": "outputs/runs/dmdp_paper_online_multienv_100k_fixed/eval/dmdp_paper_online_eval.json",
+    "missing": false,
+    "mean_return": 1.2877327361163355,
+    "success_rate": 0.8,
+    "average_cost": 245.1,
+    "state_w2": 1.7518741281454575,
+    "final_state_w2": 1.3926878270814516,
+    "tail_risk": 0.42435,
+    "unsafe_occupancy": 0.40925,
+    "dispersion_error": 0.5677174083359617
+  },
+  {
+    "method": "Method 4 Tail Warmup",
+    "path": "outputs/runs/dmdp_paper_online_tail_warmup_100k/eval/dmdp_paper_online_eval.json",
+    "missing": false,
+    "mean_return": 2.824409506574596,
+    "success_rate": 0.8,
+    "average_cost": 137.9,
+    "state_w2": 1.981091722429507,
+    "final_state_w2": 1.8434591995703802,
+    "tail_risk": 0.22985,
+    "unsafe_occupancy": 0.22445,
+    "dispersion_error": 0.5999306190294532
+  },
+  {
+    "method": "Method 4 Residual Warmup",
+    "path": "outputs/runs/dmdp_paper_online_residual_warmup_100k/eval/dmdp_paper_online_eval.json",
+    "missing": false,
+    "mean_return": 0.533578032250158,
+    "success_rate": 0.7,
+    "average_cost": 153.9,
+    "state_w2": 1.7687251627514513,
+    "final_state_w2": 1.9593218957750047,
+    "tail_risk": 0.21315,
+    "unsafe_occupancy": 0.20975,
+    "dispersion_error": 0.5573052044135766
+  }
+]

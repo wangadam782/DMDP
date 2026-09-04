@@ -1,0 +1,15 @@
+name: dmdp-safety-main
+channels:
+  - conda-forge
+dependencies:
+  - python=3.8
+  - pip
+  - numpy>=1.21,<1.24
+  - imageio>=2.27
+  - pyyaml>=6.0
+  - matplotlib>=3.6,<3.8
+  - pandas>=1.5,<2.1
+  - pytest>=7.0,<8.0
+  - tqdm>=4.66
+  - pip:
+      - torch>=2.2,<2.5

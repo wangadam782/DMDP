@@ -1,0 +1,34 @@
+{
+  "method": "dist_mappo",
+  "seed": 7,
+  "device": "cpu",
+  "total_steps": 1024,
+  "rollout_steps": 128,
+  "num_epochs": 4,
+  "minibatch_size": 512,
+  "gamma": 0.99,
+  "gae_lambda": 0.95,
+  "clip_ratio": 0.2,
+  "entropy_coef": 0.01,
+  "critic_coef": 0.5,
+  "learning_rate": 0.0003,
+  "max_grad_norm": 0.5,
+  "cost_penalty": 0.1,
+  "distributional": {
+    "num_quantiles": 32,
+    "huber_kappa": 1.0,
+    "actor_objective": "mean",
+    "cvar_alpha": 0.1
+  },
+  "network": {
+    "hidden_sizes": [
+      128,
+      128
+    ],
+    "activation": "tanh"
+  },
+  "output": {
+    "checkpoint": "dmdp_multigoal/outputs/runs/dist_mappo_method2_1k/checkpoints/dist_mappo_latest.pt",
+    "metrics": "dmdp_multigoal/outputs/runs/dist_mappo_method2_1k/metrics/dist_mappo_train.json"
+  }
+}

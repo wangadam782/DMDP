@@ -1,0 +1,76 @@
+{
+  "method": "mappo",
+  "status": "trained",
+  "checkpoint": "outputs/checkpoints/mappo_latest.pt",
+  "adapter": {
+    "requested_env_id": "SafetyPointMultiGoal1-v0",
+    "actual_env_id": "SafetyPointGoal1-v0",
+    "observation_kind": "Box",
+    "action_kind": "Box",
+    "num_agents": 1,
+    "notes": [
+      "Adapter detected a single-agent API. MultiGoal may mean multiple goals in this Safety-Gymnasium version."
+    ]
+  },
+  "config": {
+    "method": "mappo",
+    "seed": 7,
+    "device": "cpu",
+    "total_steps": 32,
+    "rollout_steps": 16,
+    "num_epochs": 4,
+    "minibatch_size": 512,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "clip_ratio": 0.2,
+    "entropy_coef": 0.01,
+    "value_coef": 0.5,
+    "learning_rate": 0.0003,
+    "max_grad_norm": 0.5,
+    "cost_penalty": 0.1,
+    "network": {
+      "hidden_sizes": [
+        128,
+        128
+      ],
+      "activation": "tanh"
+    },
+    "output": {
+      "checkpoint": "outputs/checkpoints/mappo_latest.pt",
+      "metrics": "outputs/metrics/mappo_train.json"
+    }
+  },
+  "episodes": [],
+  "updates": [
+    {
+      "update": 1.0,
+      "total_steps": 16.0,
+      "policy_loss": -0.07310813665390015,
+      "value_loss": 0.0018709927098825574,
+      "entropy": 2.837772846221924,
+      "recent_episode_return": 0.0,
+      "recent_episode_train_return": 0.0,
+      "recent_episode_cost": 0.0,
+      "recent_episode_length": 0.0
+    },
+    {
+      "update": 2.0,
+      "total_steps": 32.0,
+      "policy_loss": -0.0177505761384964,
+      "value_loss": 0.0005148171330802143,
+      "entropy": 2.8367090225219727,
+      "recent_episode_return": 0.0,
+      "recent_episode_train_return": 0.0,
+      "recent_episode_cost": 0.0,
+      "recent_episode_length": 0.0
+    }
+  ],
+  "summary": {
+    "total_steps": 32,
+    "num_completed_episodes": 0,
+    "recent_episode_return": 0.0,
+    "recent_episode_train_return": 0.0,
+    "recent_episode_cost": 0.0,
+    "recent_episode_length": 0.0
+  }
+}

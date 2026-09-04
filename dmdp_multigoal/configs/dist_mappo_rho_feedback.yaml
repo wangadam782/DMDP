@@ -1,0 +1,33 @@
+method: dist_mappo_rho
+seed: 7
+device: cpu
+total_steps: 100000
+rollout_steps: 256
+num_epochs: 4
+minibatch_size: 512
+gamma: 0.99
+gae_lambda: 0.95
+clip_ratio: 0.2
+entropy_coef: 0.01
+critic_coef: 0.5
+learning_rate: 0.0003
+max_grad_norm: 0.5
+cost_penalty: 0.1
+
+distributional:
+  num_quantiles: 32
+  huber_kappa: 1.0
+  actor_objective: mean
+  cvar_alpha: 0.1
+
+network:
+  hidden_sizes: [128, 128]
+  activation: tanh
+
+rho_feedback:
+  parameterization: diagonal_gaussian
+  omega: [mu, sigma]
+
+output:
+  checkpoint: outputs/checkpoints/dist_mappo_rho_latest.pt
+  metrics: outputs/metrics/dist_mappo_rho_train.json

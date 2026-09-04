@@ -1,0 +1,20 @@
+{
+  "method": "dmdp_mappo",
+  "status": "scaffold_ready",
+  "state_distribution_control": "omega=[mu,sigma]",
+  "target_distribution": {
+    "mu": [
+      0.3,
+      1.5,
+      1.0,
+      0.4
+    ],
+    "sigma": [
+      0.2,
+      0.5,
+      0.35,
+      0.2
+    ]
+  },
+  "note": "DMDP-MAPPO uses state-distribution feedback rho, separate from return distribution Z."
+}

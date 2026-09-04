@@ -1,0 +1,24 @@
+AdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details
+AdroitHandRelocateDense-v1, AdroitHandHammerDense-v1, AdroitHandDoorDense-v1 environment's reward functions were updated in v1.2.1 without an environment version update. Therefore, use gymnasium-robotics==1.2.0 for v1 reproducibility or use v2 in gymnasium-robotics>=1.4.3. See https://github.com/Farama-Foundation/Gymnasium-Robotics/pull/220 for more details
+{
+  "output": "outputs/runs/dmdp_method3_safe_gaussian_100k/eval/method3_safe_gaussian_eval.json",
+  "csv": "outputs/runs/dmdp_method3_safe_gaussian_100k/eval/method3_safe_gaussian_eval.csv",
+  "metrics": {
+    "mean_return": -5.222905582618412,
+    "success_rate": 0.3,
+    "average_cost": 72.7,
+    "return_mean": -5.222905582618412,
+    "return_variance": 31.205939838965612,
+    "return_q_0.1": -12.114990884944518,
+    "return_q_0.5": -5.904763381874844,
+    "return_q_0.9": 1.9744662686293053,
+    "return_cvar_0.1": -12.416739860140957,
+    "state_w2": 5.128352742336486,
+    "final_state_w2": 10.574562915599913,
+    "distribution_auc": 5.128352742336486,
+    "tail_risk": 0.11895,
+    "unsafe_occupancy": 0.11895,
+    "dispersion_error": 2.0658994829669686,
+    "lyapunov_violation": 0.0
+  }
+}

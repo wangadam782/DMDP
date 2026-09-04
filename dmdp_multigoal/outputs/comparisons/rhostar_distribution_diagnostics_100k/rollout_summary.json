@@ -1,0 +1,52 @@
+[
+  {
+    "label": "Method 1",
+    "method": "mappo",
+    "mean_return": 0.3031664191916018,
+    "success_rate": 1.0,
+    "average_cost": 104.0,
+    "mean_state_w2": 1.9059152923526799,
+    "final_state_w2": 1.9467586157444317,
+    "mean_tail_risk": 0.188
+  },
+  {
+    "label": "Method 2",
+    "method": "dist_mappo",
+    "mean_return": 0.41207403271215776,
+    "success_rate": 1.0,
+    "average_cost": 126.66666666666667,
+    "mean_state_w2": 1.8636216194302058,
+    "final_state_w2": 1.9085964354986669,
+    "mean_tail_risk": 0.16316666666666665
+  },
+  {
+    "label": "Method 2 + rho",
+    "method": "dist_mappo_rho",
+    "mean_return": 0.5228780071383405,
+    "success_rate": 0.6666666666666666,
+    "average_cost": 108.33333333333333,
+    "mean_state_w2": 1.9210650867502541,
+    "final_state_w2": 2.1234474399585728,
+    "mean_tail_risk": 0.15466666666666667
+  },
+  {
+    "label": "Method 3",
+    "method": "dmdp_mappo",
+    "mean_return": 0.2757108388750677,
+    "success_rate": 1.0,
+    "average_cost": 116.0,
+    "mean_state_w2": 1.849348479435,
+    "final_state_w2": 2.1232928831010702,
+    "mean_tail_risk": 0.15716666666666668
+  },
+  {
+    "label": "Method 4",
+    "method": "dmdp_paper_online",
+    "mean_return": 3.1320570791621605,
+    "success_rate": 1.0,
+    "average_cost": 113.33333333333333,
+    "mean_state_w2": 2.0182999218019053,
+    "final_state_w2": 2.8499372890115615,
+    "mean_tail_risk": 0.14
+  }
+]
